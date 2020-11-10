@@ -10,29 +10,12 @@ This guide walks you through the process of building an application that uses Sp
 
 You will build an application that stores `Customer` POJOs (Plain Old Java Objects) in a memory-based database.
 
-== What You need
-
-:java_version: 1.8
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/prereq_editor_jdk_buildtools.adoc[]
-
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/how_to_complete_this_guide.adoc[]
-
-[[scratch]]
 == Starting with Spring Initializr
 
 For all Spring applications, you should start with the https://start.spring.io[Spring
 Initializr]. The Initializr offers a fast way to pull in all the dependencies you need for
 an application and does a lot of the set up for you. This example needs the JPA and H2
 dependencies.
-
-The following listing shows the `pom.xml` file created when you choose Maven:
-
-====
-[src,xml]
-----
-include::complete/pom.xml[]
-----
-====
 
 The following listing shows the `build.gradle` file created when you choose Gradle:
 
@@ -120,8 +103,6 @@ include::initial/src/main/java/com/example/accessingdatajpa/AccessingDataJpaAppl
 ----
 ====
 
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/spring-boot-application-new-path.adoc[]
-
 Now you need to modify the simple class that the Initializr created for you. To get output
 (to the console, in this example), you need to set up a logger. Then you need to set up
 some data and use it to generate output. The following listing shows the finished
@@ -142,10 +123,6 @@ NOTE: By default, Spring Boot enables JPA repository support and looks in the pa
 	JPA repository interface definitions located in a package that is not visible, you can
 	point out alternate packages by using `@EnableJpaRepositories` and its type-safe
 	`basePackageClasses=MyRepository.class` parameter.
-
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_an_executable_jar_mainhead.adoc[]
-
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/build_an_executable_jar_with_both.adoc[]
 
 When you run your application, you should see output similar to the following:
 
@@ -185,5 +162,3 @@ The following guides may also be helpful:
 * https://spring.io/guides/gs/accessing-data-mongodb/[Accessing Data with MongoDB]
 * https://spring.io/guides/gs/accessing-data-mysql/[Accessing data with MySQL]
 * https://spring.io/guides/gs/accessing-data-neo4j/[Accessing Data with Neo4j]
-
-include::https://raw.githubusercontent.com/spring-guides/getting-started-macros/master/footer.adoc[]
