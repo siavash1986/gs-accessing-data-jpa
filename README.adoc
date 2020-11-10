@@ -12,12 +12,9 @@ You will build an application that stores `Customer` POJOs (Plain Old Java Objec
 
 == Starting with Spring Initializr
 
-For all Spring applications, you should start with the https://start.spring.io[Spring
-Initializr]. The Initializr offers a fast way to pull in all the dependencies you need for
-an application and does a lot of the set up for you. This example needs the JPA and H2
-dependencies.
+Check out https://github.com/siavash1986/gs-accessing-data-jpa[gs-accessing-data-jap] repository to your local development environment and open `initial` folder
 
-The following listing shows the `build.gradle` file created when you choose Gradle:
+The following listing shows the `build.gradle` file is located in the `initial` folder:
 
 ====
 [src,gradle]
